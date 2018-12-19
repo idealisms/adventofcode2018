@@ -1,0 +1,36 @@
+ 0 addi 4 16 4 # goto 17
+ 1 seti 1 7 1 # reg[1] = 1  # [0, 1, 0, 10550400, 1, 10551345]
+ 2 seti 1 8 2 # reg[2] = 1
+ 3 mulr 1 2 3 # reg[3] = reg[1] * reg[2]
+ 4 eqrr 3 5 3 # if reg[3] == reg[5]
+ 5 addr 3 4 4 #   goto 7
+ 6 addi 4 1 4 # else: goto 8
+ 7 addr 1 0 0 # reg[0] += reg[1]
+ 8 addi 2 1 2 # reg[2] += 1
+ 9 gtrr 2 5 3 # if reg[2] > reg[5]:
+10 addr 4 3 4 #   goto 12
+11 seti 2 1 4 # else: goto 3
+12 addi 1 1 1 # reg[1] += 1
+13 gtrr 1 5 3 # if reg[1] > reg[5]
+14 addr 3 4 4 #   goto: 16
+15 seti 1 8 4 # goto 2
+16 mulr 4 4 4 # end program
+addi 5 2 5
+mulr 5 5 5
+mulr 4 5 5
+muli 5 11 5
+addi 3 4 3
+mulr 3 4 3
+addi 3 21 3
+addr 5 3 5
+addr 4 0 4
+seti 0 5 4
+setr 4 1 3
+mulr 3 4 3
+addr 4 3 3
+mulr 4 3 3
+muli 3 14 3
+mulr 3 4 3
+addr 5 3 5
+seti 0 2 0
+seti 0 0 4
