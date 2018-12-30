@@ -8,6 +8,7 @@ My personal stats:
 ```
       --------Part 1--------   --------Part 2--------
 Day       Time   Rank  Score       Time   Rank  Score
+ 25       >24h   3012      0       >24h   1861      0
  24       >24h   2481      0       >24h   2403      0
  23       >24h   3933      0       >24h   2335      0
  22   19:32:55   2741      0   21:05:19   1663      0
